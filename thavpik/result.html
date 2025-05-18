@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+</head>
+<body>
+    <h2>Churn Prediction Report</h2>
+    <pre>{{ result['report'] }}</pre>
+
+    <h2>Feature Importance (SHAP)</h2>
+    <img src="/{{ result['shap_plot'] }}" alt="SHAP Feature Importance">
+    <br><br>
+    <a href="/">Go Back</a>
+</body>
+</html>
